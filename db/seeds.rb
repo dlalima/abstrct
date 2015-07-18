@@ -1,7 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create ([{ name: 'Domenica LaLima', email: 'domenica@example.com', password: 'password' }])
+
+Word.create([{ word: 'Clarity' }, { word: 'Jilted' }, { word: 'Requirement' }, { word: 'Lawyer' }, { word: 'Ohio' }, { word: 'Adolescence' }, { word: 'Abstract' }, { word: 'Finally' }, { word: 'Fan base' }, { word: 'Finished' }, { word: 'Vitamin' }, { word: 'Dry' }, { word: 'Management' }, { word: 'Clobbered' }, { word: 'Emotion' }, { word: 'Decibel' }, { word: 'Eyesight' }, { word: 'Mean' }, { word: 'Delay' }, { word: 'Nairobi' }, { word: 'Fried' }, { word: 'Petition' }, { word: 'Sargeant' }, { word: 'Recycle' }, { word: 'Holy' }, { word: 'Hoax' }, { word: 'Iron' }, { word: 'Introduction' }, { word: 'Gym' }, { word: 'Energy' }, { word: 'Cumbersome' }, { word: 'Atheist' }, { word: 'Grain' }, { word: 'Code' }, { word: 'Elbow' }, { word: 'Aroma' }, { word: 'Staffing' }, { word: 'Regular' }, { word: 'Gel' }, { word: 'Burrow' }, { word: 'Framework' }, { word: 'Kingdom' }, { word: 'Humidity' }, { word: 'County' }, { word: 'Dismay' }, { word: 'Draining' }, { word: 'Snitch' }, { word: 'Snitch' }, { word: 'Random' }, { word: 'Recommend' }, { word: 'Little' }, { word: 'Snitch' }, { word: 'Success' }, { word: 'Adjustment' }, { word: 'Polyester' }, { word: 'Switch' }, { word: 'Problem' }, { word: 'Change' }, { word: 'Birthday' }, { word: 'Thoughtful' }, { word: 'Happiness' }, { word: 'Ache' }, { word: 'Backward' }, { word: 'Commend' }, { word: 'Red' }, { word: 'Comedy' }, { word: 'Mind' }, { word: 'Plural' }, { word: 'Technical' }, { word: 'Hunger' }
+]) 

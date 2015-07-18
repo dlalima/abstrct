@@ -1,0 +1,15 @@
+<header>
+	<%= image_tag "abstrct.svg", size: "490x142"%>
+</header>
+
+
+<% @drawings.each do |drawing| %>
+	<img class="drawing-image" src="<%= drawing.drawing_img %>">
+
+<div class="image-info">
+	created on: <%=drawing.created_at.strftime("%A, %B %-d, %Y") %><br>
+	word: <% if (drawing.word) %>
+		    <%= drawing.word.word %>
+	      <% end %>
+</div>
+<% end %>

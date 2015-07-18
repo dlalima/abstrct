@@ -1,0 +1,37 @@
+<header>
+	<%= image_tag "abstrct.svg", size: "490x142"%>
+</header>
+
+<div class="launchButtons">
+	<button class="logInButton width" style="border-color: #3AD28C">Log in
+	</button>
+		<div class="logInForm hidden">
+			<form method="POST" action="/login">
+			<label class="email"></label>
+			<input type="text" name="email" placeholder="email">
+			<label class="password"></label>
+			<input type="password" name="password" placeholder="password"><br>
+			<input type="submit" style="border-color: #3AD28C" value="Log in">
+			</form>
+		</div>
+	
+	<br>
+
+	<button class="signUpButton width" style="border-color: #3AD28C">Sign up
+	</button>
+		<div class="submitForm hidden">
+			<form method="POST" action="/users">
+			<label class="name"></label>
+			<input type="text" name="name" placeholder="name">
+			<label class="email"></label>
+			<input type="text" name="email" placeholder="email">
+			<label class="password"></label>
+			<input type="password" name="password" placeholder="password"><br>
+			<input type="password" name="password_confirmation" placeholder="verify your password"><br>
+			<input type="submit" style="border-color: #3AD28C" value="Sign up">
+			</form>
+		</div>
+</div>
+
+
+<img src="cubes.svg" />

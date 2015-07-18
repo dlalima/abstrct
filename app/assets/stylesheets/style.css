@@ -1,0 +1,125 @@
+body {	
+	background-color: #3A3E3D;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#container { 
+	position: relative; 
+}
+
+/*actual canvas*/
+#actualCanvas { 
+	border: 1px solid #EC07EC;
+	background-color: #565656;
+}
+
+.image-info {
+	width: 450px;
+	float: right;
+	top: 550px;
+	position: relative;
+}
+
+.drawing-image {
+	border: 1px black solid;
+	margin-bottom: 50px;
+}
+
+.modalDialog {
+	position: fixed;
+	font-family: Arial;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 2px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { 
+	background: #00d9ff; 
+}
+
+.hidden {
+	display: none;
+}
+
+.launchButtons {
+	text-align: center;
+	margin-top: 150px;
+}
+
+.logInButton {
+	text-align: center;
+}
+
+.signUpButton {
+	text-align: center;
+}
+
+.width {
+	width: 150px;
+}
+
+ul {
+  display:inline-block;
+  float: right;
+  text-align: left;
+  padding-top: 25px; 
+  position: fixed;
+  right: 0;
+  margin-right: 80px;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}

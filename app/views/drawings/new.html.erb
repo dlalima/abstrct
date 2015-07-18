@@ -1,0 +1,35 @@
+<header>
+		<%= image_tag "abstrct.svg", size: "490x142"%>	
+		<ul>
+			<li><a href="#openModal">How-to</a></li>
+				<div id="openModal" class="modalDialog">	
+					<div>
+						<a href="#close" title="Close" class="close">X</a>
+						<h2>How-to</h2>
+							<p>Practice your ability to think abstractly. You'll be presented with a seemingly intangible word so use your imagination to draw what you envision that word represents. There's no right or wrong solution...it's all up to you.</p>
+					</div>
+				</div>
+	
+			<li> <a href="/drawings" title="gallery" class="gallery">All my drawings</a> </li>
+
+			<li> <%= link_to "Log out", logout_path, method: "DELETE", class: 'logout' %> </li>
+		</ul>
+	
+</header>
+
+
+<div data-word-id="<%= @random_word.id %>" id="randomWord">Draw this word: <%= @random_word.word %>
+</div>
+
+<a id="refresh" onclick="generateWord()" href="#">Give me a different word</a>
+
+<div id="container">
+	<canvas id="actualCanvas" width="1000" height="400">
+	</canvas>
+</div>
+
+<div id="buttons">
+	<button type="button" id="clear" class="width" style="border-color: #3AD28C" onclick="clearCanvas()">Clear canvas</button>
+	<button class="save width" style="border-color: #3AD28C" >Save</button>
+</div>
+
