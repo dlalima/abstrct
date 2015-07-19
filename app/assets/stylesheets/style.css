@@ -1,32 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Megrim);
+
+
 body {	
 	background-color: #3A3E3D;
 }
 
 header {
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
-#container { 
+/*#container { 
 	position: relative; 
-}
+}*/
 
 /*actual canvas*/
 #actualCanvas { 
 	border: 1px solid #EC07EC;
 	background-color: #565656;
+	border-radius: 6px; 
+	margin-top: 15px;
 }
 
 .image-info {
-	width: 450px;
-	float: right;
-	top: 550px;
+	/*width: 269px;*/
+/*	float: right;
+*/	/*top: 355px;*/
 	position: relative;
+	color: #EAEAEA;
+	margin-left: 30px;
+	margin-bottom: 50px;
 }
 
 .drawing-image {
-	border: 1px black solid;
-	margin-bottom: 50px;
+	border: 1px solid #EC07EC;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	background-color: #565656;
+	border-radius: 6px;
 }
 
 .modalDialog {
@@ -55,7 +66,7 @@ header {
 	position: relative;
 	margin: 10% auto;
 	padding: 5px 20px 13px 20px;
-	border-radius: 2px;
+	border-radius: 4px;
 	background: #fff;
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
@@ -63,26 +74,24 @@ header {
 }
 
 .close {
-	background: #606061;
-	color: #FFFFFF;
-	line-height: 25px;
+	background: white;
+	border: 2px solid #25FFC3;
+	color: magenta;
+	line-height: 24px;
 	position: absolute;
 	right: -12px;
 	text-align: center;
-	top: -10px;
+	top: -14px;
 	width: 24px;
 	text-decoration: none;
-	font-weight: bold;
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
 	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
 }
 
 .close:hover { 
-	background: #00d9ff; 
+	background: #25FFC3; 
+	color: white;
 }
 
 .hidden {
@@ -122,4 +131,34 @@ a {
 
 li {
 	list-style-type: none;
+}
+
+.cubes {
+	right: 0;
+  display: inline-block;
+  margin-left: 500px;
+}
+
+#drawingContainer {
+	text-align: center;
+}
+
+.words {
+	text-align: left;
+	color: #EAEAEA;
+	margin-left: 150px;
+}
+
+#rubyWord {
+	font-size: 2.2em;
+	color: #EC07EC;
+}
+
+#refresh {
+	color: #EAEAEA;
+}
+
+.subhed {
+	font-family: Megrim;
+	color: #EC07EC;
 }

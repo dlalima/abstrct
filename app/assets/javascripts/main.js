@@ -89,7 +89,7 @@ function generateWord() {
       type: "GET",
       dataType: "json"
     }).done(function(word) {
-      $("#randomWord").html("Draw this word: " + word.word);
+      $("#rubyWord").html(word.word);
       $("#randomWord").data("word-id", word.id)
     })
   })
@@ -116,5 +116,4 @@ $(window).on('load', function(){
     $('.signUpButton').hide();
   })  
 })
-
 
