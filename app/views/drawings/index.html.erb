@@ -25,9 +25,10 @@
 <div id="drawingContainer">
 	<div class="words">ALL MY CREATIONS
 	</div>
+	
+	<% @drawings.each do |drawing| %>
 
 	<div id="container">
-		<% @drawings.each do |drawing| %>
 			<img class="drawing-image" src="<%= drawing.drawing_img %>">
 	</div>
 
