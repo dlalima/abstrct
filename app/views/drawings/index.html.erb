@@ -1,5 +1,13 @@
 <header>
-		<%= image_tag "abstrct.svg", size: "490x142"%>	
+	<div id="cubes">
+		<%= image_tag "cubes3.svg", size: "160x160"%>
+	</div>
+
+	<div id="logo">
+		<%= image_tag "abstrct.svg", size: "490x142"%>
+	</div>
+
+	<div id="menu">	
 		<ul>
 			<li><a href="#"> </a></li><br>
 			<li> <a href="/drawings/new">Draw another</a> 
@@ -8,17 +16,27 @@
 			<li> <%= link_to "Log out", logout_path, method: "DELETE", class: 'logout' %>
 			</li>
 		</ul>
+	</div>	
 </header>
 
+<br>
+<br>
 
-<% @drawings.each do |drawing| %>
-	<img class="drawing-image" src="<%= drawing.drawing_img %>">
+<div id="drawingContainer">
+	<div class="words">ALL MY CREATIONS
+	</div>
 
-<div class="image-info">
-	<% if (drawing.word) %> <%= drawing.word.word.upcase %> <% end %>
-	was created on <%=drawing.created_at.strftime("%B %-d, %Y") %><br>
+	<div id="container">
+		<% @drawings.each do |drawing| %>
+			<img class="drawing-image" src="<%= drawing.drawing_img %>">
+	</div>
 
-	      
-</div>
-<% end %>
+	<div class="image-info">
+		<% if (drawing.word) %> "<%= drawing.word.word %>" <% end %>
+		 was created on <%=drawing.created_at.strftime("%B %-d, %Y") %>
+	<br>
+
+	</div>
+	<% end %>
+</div> <!-- drawingContainer -->
 

@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
     canvas.addEventListener('mouseup',   ev_canvas, false);
   }
 
-    // Painting tool works like a drawing pencil (tracks mouse movements)
+    // Tool tracks mouse movements
     function tool_pencil () {
       var tool = this;
       this.started = false;
@@ -107,7 +107,7 @@ $(window).on('load', function(){
 })
 
 
-// Launch screen sign-in form
+// Launch screen sign-up form
 $(window).on('load', function(){
   $('.signUpButton').on('click', function(event){
     event.preventDefault();

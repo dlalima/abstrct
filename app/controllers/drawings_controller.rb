@@ -3,6 +3,15 @@ class DrawingsController < ApplicationController
 	# before_action :set_drawing, only: [:show]
 	before_action :logged_in?
 
+	def index
+		@drawings = Drawing.all
+	end
+
+	def show
+		drawing = Drawing.find(params[:id])
+		render json: drawing
+	end
+
 	def new
 		random_num = rand(Word.all.length)
 		@random_word = Word.all[random_num]
@@ -21,14 +30,7 @@ class DrawingsController < ApplicationController
     render nothing: true
 	end
 
-	def show
-		drawing = Drawing.find(params[:id])
-		render json: drawing
-	end
-
-	def index
-		@drawings = Drawing.all
-	end
+	
 
 
 	private

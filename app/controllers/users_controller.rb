@@ -19,7 +19,6 @@ class UsersController < ActionController::Base
     password_confirmation: params[:password_confirmation]})
     
     redirect_to '/drawings/new' if user
-
  	end
 
 

@@ -17,7 +17,6 @@ class WordsController < ApplicationController
 	end
 
 
-
 	private
 	
 	def set_word

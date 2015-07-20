@@ -1,14 +1,15 @@
 #ABSTRCT
-##WDI Melville | Final project | Domenica LaLima
+##WDI Melville | Final project
 
-##Description
-The basis of my app traces back to my personal desire to be able to think abstractly which I had never considered myself inexperienced or lousy at until I started this class. On our first day here, we did a  pair-programming exercise where we had to navigate fellow classmates to illustrate a random intangible word without actually saying it.
+###Description
+"Abstract" allows users to mindfully practice their ability to think abstractly and illustrate personal interpretation of random, intangible words. Built on a Rails framework, a user can create an account and then log in to see an HTML5 Canvas whiteboard along with a randomly-generated word. The *canvasRenderingContext2D* interface provides the 2D rendering context for the drawing surface. The user can then draw what they envision that word represents, words that don’t immediately evoke something to draw, but words that requires one to use their imagination to conjure. Functionality includes the ability to choose another random word, to clear the screen, or save their work to a gallery to access later.
 
-I struggled hard with this. 
+###Technologies
+- Ruby on Rails V4.2  
+- HTML5 Canvas API (*canvasRenderingContext2D* interface)
+- Skeleton CSS V2.0.4    
+- PostgreSQL  
 
-Afterwards I turned around to a classmate to gaze at his magnificent rendering of the word “change”. At that moment, I realized that this ability is something that many are born with but others (such as linear-thinkers like myself) have to mindfully practice to get better at.
 
-My app, abstrct, serves that very purpose. Built on a Rails framework, a user will be able to create an account and then log in to see a whiteboard pop up along with a randomly-generated word. The user will then be able to draw what they envision that word represents, words like “responsibility”, "Nairobi", or “hoax”…words that don’t immediately evoke something to draw, but words that require the user to use their imagination or even 4D-thought abilities to conjure. There is also a feature for the user to choose another random word, the ability to start over, and save their work to a gallery to access later.
-
-##Technologies
-HTML5 Canvas API for the 2D context
+Author: Domenica LaLima    
+Creation date: July 20, 2015 

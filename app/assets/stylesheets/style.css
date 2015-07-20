@@ -1,18 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Megrim);
 
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
 
 body {	
 	background-color: #3A3E3D;
 }
 
 header {
-	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
-
-/*#container { 
-	position: relative; 
-}*/
 
 /*actual canvas*/
 #actualCanvas { 
@@ -23,9 +22,6 @@ header {
 }
 
 .image-info {
-	/*width: 269px;*/
-/*	float: right;
-*/	/*top: 355px;*/
 	position: relative;
 	color: #EAEAEA;
 	margin-left: 30px;
@@ -35,7 +31,7 @@ header {
 .drawing-image {
 	border: 1px solid #EC07EC;
 	margin-left: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 	background-color: #565656;
 	border-radius: 6px;
 }
@@ -111,42 +107,49 @@ header {
 	text-align: center;
 }
 
+/*button width*/
 .width {
 	width: 150px;
 }
 
 ul {
-  display:inline-block;
+  display: inline-block;
   float: right;
   text-align: left;
   padding-top: 25px; 
-  position: fixed;
   right: 0;
-  margin-right: 80px;
-}
-
-a {
-	text-decoration: none;
 }
 
 li {
 	list-style-type: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 .cubes {
-	right: 0;
-  display: inline-block;
-  margin-left: 500px;
+	display: inline-block;
+	margin-left: 400px;
 }
 
+/*words, canvas, and buttons*/
 #drawingContainer {
-	text-align: center;
+	width: 100%;
+  margin: 0 auto;
 }
 
+/*canvas only*/
+#container {
+	display: inline-block;
+}
+
+/*words only*/
 .words {
-	text-align: left;
 	color: #EAEAEA;
-	margin-left: 150px;
+	position: relative;
+	margin-left: 30px;
+	margin-bottom: 5px;
 }
 
 #rubyWord {
@@ -161,4 +164,28 @@ li {
 .subhed {
 	font-family: Megrim;
 	color: #EC07EC;
+}
+
+#logo {
+	text-align: center;
+}
+
+#cubes {
+	position: absolute;
+	left: 25rem;
+}
+
+#menu {
+	margin-top: -150px;
+	margin-bottom: 190px;
+	text-align: left;
+}
+
+.save {
+	margin-left: 5px;
+}
+
+#buttons {
+	margin-top: 6px;
+	margin-bottom: 60px;
 }
