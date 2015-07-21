@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
 	$('.save').on('click', function(event){
-		console.log('saving...');
     var dataURL = document.getElementById("actualCanvas").toDataURL("image/png");
     // Pic = Pic.replace(/^data:image\/(png|jpg);base64,/, "")  
 		var file = dataURLtoBlob(dataURL);
@@ -11,7 +10,7 @@ $(document).ready(function(){
 	  fd.append("image", file);
 	  var wordID = $("#randomWord").data("word-id");
 	  fd.append("word_id", wordID);
-	  // And send it
+	  // Send it
 	  $.ajax({
 	     url: "/drawings",
 	     type: "POST",
@@ -30,6 +29,6 @@ function dataURLtoBlob(dataURL) {
     for(var i = 0; i < binary.length; i++) {
         array.push(binary.charCodeAt(i));
     }
-    // Return our Blob object
+    // Return blob object
     return new Blob([new Uint8Array(array)], {type: 'image/png'});
 }

@@ -13,12 +13,40 @@ header {
 	margin-bottom: 80px;
 }
 
-/*actual canvas*/
+
+
+/*//////// canvas and random words ////////*/
+
+/* actual canvas */
 #actualCanvas { 
-	border: 1px solid #EC07EC;
 	background-color: #565656;
+	border: 1px solid #EC07EC;
 	border-radius: 6px; 
 	margin-top: 15px;
+}
+
+/* words, canvas, and buttons */
+#drawingContainer {
+	width: 100%;
+  margin: 0 auto;
+}
+
+/* canvas only */
+#container {
+	display: inline-block;
+}
+
+/* words only */
+.words {
+	color: #EAEAEA;
+	position: relative;
+	margin-left: 30px;
+	margin-bottom: 5px;
+}
+
+#rubyWord {
+	font-size: 2.2em;
+	color: #EC07EC;
 }
 
 .image-info {
@@ -29,13 +57,16 @@ header {
 }
 
 .drawing-image {
+	background-color: #565656;
 	border: 1px solid #EC07EC;
 	margin-left: 30px;
 	margin-bottom: 4px;
-	background-color: #565656;
 	border-radius: 6px;
 }
 
+
+
+/*//////// modal for how-to ////////*/
 .modalDialog {
 	position: fixed;
 	font-family: Arial;
@@ -90,89 +121,24 @@ header {
 	color: white;
 }
 
-.hidden {
-	display: none;
-}
 
+
+
+
+
+
+/*////////  buttons ////////*/
 .launchButtons {
 	text-align: center;
 	margin-top: 150px;
 }
 
-.logInButton {
+.logInButton .signUpButton {
 	text-align: center;
 }
 
-.signUpButton {
-	text-align: center;
-}
-
-/*button width*/
 .width {
 	width: 150px;
-}
-
-ul {
-  display: inline-block;
-  float: right;
-  text-align: left;
-  padding-top: 25px; 
-  right: 0;
-}
-
-li {
-	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-}
-
-.cubes {
-	display: inline-block;
-	margin-left: 400px;
-}
-
-/*words, canvas, and buttons*/
-#drawingContainer {
-	width: 100%;
-  margin: 0 auto;
-}
-
-/*canvas only*/
-#container {
-	display: inline-block;
-}
-
-/*words only*/
-.words {
-	color: #EAEAEA;
-	position: relative;
-	margin-left: 30px;
-	margin-bottom: 5px;
-}
-
-#rubyWord {
-	font-size: 2.2em;
-	color: #EC07EC;
-}
-
-#refresh {
-	color: #EAEAEA;
-}
-
-.subhed {
-	font-family: Megrim;
-	color: #EC07EC;
-}
-
-#logo {
-	text-align: center;
-}
-
-#cubes {
-	position: absolute;
-	left: 25rem;
 }
 
 #menu {
@@ -188,4 +154,52 @@ a {
 #buttons {
 	margin-top: 6px;
 	margin-bottom: 60px;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+/*////////  misc ////////*/
+ul {
+  display: inline-block;
+  float: right;
+  text-align: left;
+  right: 0;
+  padding-top: 25px; 
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* header cubes */
+#cubes {
+	position: absolute;
+	left: 25rem;
+}
+
+/* homepage cubes */
+.cubes {
+	display: inline-block;
+	margin-left: 400px;
+}
+
+#refresh {
+	color: #EAEAEA;
+}
+
+.subhed {
+	font-family: 'Megrim', cursive;
+	color: #EC07EC;
+}
+
+#logo {
+	text-align: center;
 }

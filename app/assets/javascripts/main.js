@@ -42,8 +42,8 @@ window.addEventListener('load', function () {
         tool.mousemove(ev);
         tool.started = false;
       }
-    };
-  }
+  };
+}
 
   // Determines the mouse position relative to the canvas element
   function ev_canvas (ev) {
@@ -65,7 +65,6 @@ window.addEventListener('load', function () {
   init();
 
   }, false); 
-
 
   // Clears the canvas
   function clearCanvas() {
@@ -116,4 +115,3 @@ $(window).on('load', function(){
     $('.signUpButton').hide();
   })  
 })
-
